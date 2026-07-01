@@ -1,0 +1,126 @@
+@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+@import '../node_modules/bootstrap-icons/font/bootstrap-icons.min.css';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+.table-wrapper {
+  max-height: 69vh;
+  overflow-y: auto;
+}
+
+:root {
+  --text-color: black;
+}
+
+:root .uepa {
+  --detail-high-contrast: rgb(0, 0, 0);
+  --text-body: rgb(12, 0, 248);
+  --text-comment: rgb(255, 255, 255);
+  --detail-medium-contrast: rgb(83, 83, 83);
+}
+
+body {
+  background: linear-gradient(-45deg, #a3a3a3, #d0e7f9, #9f89ff, #cce5ff);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100%;
+  width: 100%;
+  color: var(--text-color);
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Tema escuro com gradiente animado */
+.dark-theme {
+  --text-color: white;
+  --data-bs-theme: "dark";
+  background: linear-gradient(-45deg, #af3030, #000000, #121212, #3f0606);
+  background-size: 400% 400%;
+  animation: gradient-dark 15s ease infinite;
+  color: var(--text-color);
+}
+
+.dark-theme .uepa {
+  --detail-high-contrast: rgb(255, 255, 255);
+  --text-body: rgb(255, 0, 0);
+  --text-comment: rgb(190, 190, 190);
+  --detail-medium-contrast: rgb(45, 45, 45);
+}
+
+.dark-theme .CorNavButtonLog {
+  background-color: rgb(255, 0, 0);
+  color: white;
+}
+
+.dark-theme .CorNavButtonLog:hover {
+  background-color: rgb(0, 30, 255);
+  color: white;
+}
+
+.caixota{
+  background-color: rgba(255, 255, 255, 0.459);
+  padding: 30px;
+  border-radius: 4px;
+}
+.caixota2{
+  padding: 30px;
+  border-radius: 4px;
+}
+.dark-theme .caixota {
+  background-color: rgba(0, 0, 0, 0.452);
+}
+
+.dark-theme .sidebar {
+  background-color: rgba(0, 0, 0, 0.452);
+  border: solid rgba(255, 255, 255, 0.493) 1px;
+}
+
+.dark-theme .sidebar a {
+  color: white !important;
+}
+
+.dark-theme .sidebar a:hover {
+  border: solid rgb(255, 255, 255) 1px;
+  background-color: rgb(44, 21, 192);
+}
+
+#ContainerGraph{
+    width:100% ;
+    height:500px ;
+}
+
+/* Animação para tema claro */
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Animação para tema escuro */
+@keyframes gradient-dark {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

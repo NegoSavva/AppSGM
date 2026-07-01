@@ -1,0 +1,81 @@
+/* Sidebar container original */
+.logo{
+  width: 60px;
+  height: 60px;
+}
+.migs{
+  border-radius: 30px;
+}
+.sidebar {
+  width: 200px;
+  height: 100vh;
+  border-radius: 10px; /* pode remover para testar */
+  background-color: rgba(255, 255, 255, 0.644);
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.75);
+  padding: 10px 0;
+  margin: 14px 0; /* ajustado: só margem vertical */
+  /* garantir que esteja visível */
+}
+
+/* Links dentro da sidebar com adaptação das animações */
+.sidebar a {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  display: block;
+  position: relative;
+  height: 40px;
+  line-height: 40px;
+  margin-top: 10px;
+  width: 90%;
+  margin-left: 5%;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 0 20px;
+  transition: all 0.5s;
+}
+
+/* Animação de sublinhado */
+.sidebar a:after {
+  content: '';
+  position: absolute;
+  width: 80%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  bottom: 50%;
+  left: -100%;
+  transition: all 0.5s;
+}
+
+.sidebar a:hover:after,
+.sidebar a.hover:after {
+  left: 100%;
+}
+
+/* Animação do texto ao passar o mouse */
+.sidebar a .text {
+  text-shadow: 0px -40px 0px rgba(255, 255, 255, 1);
+  transition: all 0.75s;
+  transform: translateY(100%) translateZ(0);
+  transition-delay: all 0.25s;
+}
+
+.sidebar a:hover .text,
+.sidebar a.hover .text {
+  text-shadow: 0px -40px 0px rgba(255, 255, 255, 0);
+  transform: translateY(0%) translateZ(0) scale(1.1);
+  font-weight: 600;
+}
+
+/* Hover: Mudança de tamanho de fonte, cor de fundo e sombra */
+.sidebar a:hover {
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: all 0.3s ease;
+  border-radius: 10px;
+  background-color: rgba(46, 125, 156, 0.247);
+
+}

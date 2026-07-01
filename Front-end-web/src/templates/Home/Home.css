@@ -1,0 +1,19 @@
+
+.opa{
+  /*Cores dos botoes jkkk*/
+  /*Não me pergunte como esse código funciona porque eu não sei.*/
+  --detail-high-contrast: rgb(56, 56, 56);
+  --text-body: rgb(0, 0, 0);
+  --text-comment: rgb(255, 255, 255);
+  --detail-medium-contrast: rgb(83, 83, 83);
+}
+.textao {
+  width: 100%;
+  height: calc(100vh - 120px); /* ocupa toda a altura da viewport menos header/sidebar */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* centraliza o texto dentro */
+  padding: 20px;
+  box-sizing: border-box;
+}

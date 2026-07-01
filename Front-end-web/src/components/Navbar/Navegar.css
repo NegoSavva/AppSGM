@@ -1,0 +1,8 @@
+.CorNavButtonLog{
+    background-color: rgb(0, 30, 255);
+    color: white;
+}
+.CorNavButtonLog:hover{
+    background-color: rgb(255, 0, 0);
+    color:white
+}
