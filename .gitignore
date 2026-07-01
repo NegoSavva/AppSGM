@@ -1,0 +1,54 @@
+
+```gitignore
+# ============================
+# Java / Maven (Backend)
+# ============================
+backend/target/
+backend/.mvn/wrapper/maven-wrapper.jar
+backend/.classpath
+backend/.project
+backend/.settings/
+backend/bin/
+
+# ============================
+# Node.js / React (Web)
+# ============================
+web/node_modules/
+web/dist/
+web/build/
+web/.env
+web/.env.local
+web/npm-debug.log*
+
+# ============================
+# Flutter (Mobile)
+# ============================
+mobile/.dart_tool/
+mobile/build/
+mobile/.flutter-plugins
+mobile/.flutter-plugins-dependencies
+mobile/.metadata
+mobile/.pub-cache/
+mobile/pubspec.lock.bak
+
+# ============================
+# Geral
+# ============================
+# IDEs
+.idea/
+.vscode/
+*.iml
+*.swp
+*.swo
+
+# Sistema Operacional
+.DS_Store
+Thumbs.db
+
+# Ambiente e Logs
+.env
+*.log
+*.tmp
+
+# Outros
+coverage/
