@@ -4,59 +4,61 @@ Sistema completo para gestão e visualização de cardápios escolares com contr
 
 ## 📋 Sobre o Projeto
 
-O **SDCE (Sistema de Cardápio Escolar)** foi desenvolvido com o objetivo de modernizar o controle da merenda escolar. O sistema é composto por três partes principais:
+O **SDCE (Sistema de Cardápio Escolar)** foi desenvolvido para modernizar o controle da merenda em instituições de ensino. O sistema conta com três aplicações principais:
 
-- **Backend** (Java + Maven): Responsável pela lógica de negócio, gerenciamento de cardápios, usuários e geração de relatórios.
-- **Web** (React + Vite): Interface para administradores gerenciarem cardápios, visualizarem gráficos de consumo e gerenciarem usuários.
-- **Mobile** (Flutter): Aplicativo para alunos visualizarem o cardápio diário/semanal, gerarem QR Code para registrar o consumo da refeição e acessarem conteúdos educativos sobre alimentação saudável.
+- **Backend** em Java com Maven
+- **Interface Web** em React + Vite (para administradores)
+- **Aplicativo Mobile** em Flutter (para alunos)
 
-O projeto também inclui conscientização sobre a **redução de desperdício de alimentos** (ODS 12).
+Além do controle de cardápios, o projeto também inclui funcionalidades de conscientização sobre alimentação saudável e redução de desperdício de alimentos (ODS 12).
 
-## ✨ Funcionalidades
+## ✨ Funcionalidades Principais
 
 - Visualização do cardápio diário e semanal
-- Geração de QR Code para controle de consumo
+- Geração de QR Code para registro de consumo
 - Dashboard com gráficos de consumo por turno
-- Cadastro e gerenciamento de cardápios (Web)
+- Gerenciamento de cardápios e usuários (Web)
 - Conteúdo educativo sobre alimentação saudável
-- Controle de usuários e autenticação
 
-## 🛠️ Tecnologias Utilizadas
+## 🛠️ Tecnologias
 
-| Parte       | Tecnologia          |
-|-------------|---------------------|
-| Backend     | Java + Maven        |
-| Web         | React + Vite        |
-| Mobile      | Flutter             |
-| Banco de Dados | SQL              |
+| Módulo     | Tecnologia          |
+|------------|---------------------|
+| Backend    | Java + Maven        |
+| Web        | React + Vite        |
+| Mobile     | Flutter             |
+| Banco      | SQL                 |
+
+## 📁 Estrutura do Projeto
+
 
 sdce-sistema-cardapio-escolar/
-├── backend/          # Projeto Java/Maven
-├── web/              # Frontend React
-├── mobile/           # Aplicativo Flutter
-├── docs/             # Documentação completa
-├── database/         # Scripts do banco de dados
-└── README.md
+│
+├── backend/           # API em Java (Maven)
+├── web/               # Frontend React (Vite)
+├── mobile/            # Aplicativo Flutter
+├── docs/              # Documentação completa do projeto
+├── database/          # Scripts SQL do banco de dados
+│
+├── README.md
+└── .gitignore
 
 
 
 ## 👥 Equipe
 
-- **Gabriel Borges da Rocha** – Gerente
-- **Giovanna Martins dos Santos** – Documentação
-- **Guilherme Lima de Andrade** – Documentação
-- **Gustavo Ferreira dos Santos Primo** – Documentação
-- **João Vitor Macena Nicolay** – Desenvolvimento Web (React)
-- **Kauan Alves Chocair** – Desenvolvimento Mobile (Flutter)
+- Gabriel Borges da Rocha – Gerente
+- Giovanna Martins dos Santos – Documentação
+- Guilherme Lima de Andrade – Documentação
+- Gustavo Ferreira dos Santos Primo – Documentação
+- João Vitor Macena Nicolay – Desenvolvimento Web (React)
+- Kauan Alves Chocair – Desenvolvimento Mobile (Flutter)
 
 ## 📄 Documentação
 
-A documentação completa do projeto (incluindo diagramas, requisitos, casos de uso e telas) está disponível na pasta (Documentação).
+A documentação completa (diagramas, requisitos, casos de uso e prints das telas) está disponível na pasta `docs/`.
 
-Desenvolvido como projeto do Curso Técnico em Informática
+Projeto desenvolvido no Curso Técnico em Informática
 FIEB – Fundação Instituto de Educação de Barueri
-Outubro/2025
+2025
 
-
-
-## 📁 Estrutura do Projeto
